@@ -20,19 +20,10 @@
             <div class="row justify-content-center align-items-center">
                 <div class="col-lg-9 text-center">
                     <h1 class="heading" data-aos="fade-up">
-                        Penginapan yang nyaman bagi anda
+                        Hotel Margonda Residence 2
                     </h1>
-                    <form
-                        action="#"
-                        class="narrow-w form-search d-flex align-items-stretch mb-3"
-                        data-aos="fade-up"
-                        data-aos-delay="200">
-                        <input
-                            type="text"
-                            class="form-control px-4"
-                            placeholder="Your ZIP code or City. e.g. New York" />
-                        <button type="submit" class="btn btn-primary">Search</button>
-                    </form>
+                    <p style="color: white;">Ingin beristirahat di lokasi yang mudah diakses dan nyaman?
+                        Kami hadir untuk memenuhi kebutuhan Anda dengan kamar yang bersih, pelayanan ramah, dan harga yang sesuai.</p>
                 </div>
             </div>
         </div>
@@ -61,7 +52,7 @@
                         <div class="property-slider">
                             <div class="property-item">
                                 <a href="property-single.html" class="img">
-                                    <img src="images/img_1.jpg" alt="Image" class="img-fluid" />
+                                    <img src="<?= base_url('assets') ?>/images/img_1.jpg" alt="Image" class="img-fluid" />
                                 </a>
 
                                 <div class="property-content">
@@ -91,7 +82,7 @@
 
                             <div class="property-item">
                                 <a href="property-single.html" class="img">
-                                    <img src="images/img_2.jpg" alt="Image" class="img-fluid" />
+                                    <img src="<?= base_url('assets') ?>/images/img_2.jpg" alt="Image" class="img-fluid" />
                                 </a>
 
                                 <div class="property-content">
@@ -121,7 +112,7 @@
 
                             <div class="property-item">
                                 <a href="property-single.html" class="img">
-                                    <img src="images/img_3.jpg" alt="Image" class="img-fluid" />
+                                    <img src="<?= base_url('assets') ?>/images/img_3.jpg" alt="Image" class="img-fluid" />
                                 </a>
 
                                 <div class="property-content">
@@ -151,7 +142,7 @@
 
                             <div class="property-item">
                                 <a href="property-single.html" class="img">
-                                    <img src="images/img_4.jpg" alt="Image" class="img-fluid" />
+                                    <img src="<?= base_url('assets') ?>/images/img_4.jpg" alt="Image" class="img-fluid" />
                                 </a>
 
                                 <div class="property-content">
@@ -181,7 +172,7 @@
 
                             <div class="property-item">
                                 <a href="property-single.html" class="img">
-                                    <img src="images/img_5.jpg" alt="Image" class="img-fluid" />
+                                    <img src="<?= base_url('assets') ?>/images/img_5.jpg" alt="Image" class="img-fluid" />
                                 </a>
 
                                 <div class="property-content">
@@ -211,7 +202,7 @@
 
                             <div class="property-item">
                                 <a href="property-single.html" class="img">
-                                    <img src="images/img_6.jpg" alt="Image" class="img-fluid" />
+                                    <img src="<?= base_url('assets') ?>/images/img_6.jpg" alt="Image" class="img-fluid" />
                                 </a>
 
                                 <div class="property-content">
@@ -241,7 +232,7 @@
 
                             <div class="property-item">
                                 <a href="property-single.html" class="img">
-                                    <img src="images/img_7.jpg" alt="Image" class="img-fluid" />
+                                    <img src="<?= base_url('assets') ?>/images/img_7.jpg" alt="Image" class="img-fluid" />
                                 </a>
 
                                 <div class="property-content">
@@ -271,7 +262,7 @@
 
                             <div class="property-item">
                                 <a href="property-single.html" class="img">
-                                    <img src="images/img_8.jpg" alt="Image" class="img-fluid" />
+                                    <img src="<?= base_url('assets') ?>/images/img_8.jpg" alt="Image" class="img-fluid" />
                                 </a>
 
                                 <div class="property-content">
@@ -301,7 +292,7 @@
 
                             <div class="property-item">
                                 <a href="property-single.html" class="img">
-                                    <img src="images/img_1.jpg" alt="Image" class="img-fluid" />
+                                    <img src="<?= base_url('assets') ?>/images/img_1.jpg" alt="Image" class="img-fluid" />
                                 </a>
 
                                 <div class="property-content">
@@ -428,7 +419,7 @@
                     <div class="item">
                         <div class="testimonial">
                             <img
-                                src="images/person_1-min.jpg"
+                                src="<?= base_url('assets') ?>/images/person_1-min.jpg"
                                 alt="Image"
                                 class="img-fluid rounded-circle w-25 mb-4" />
                             <div class="rate">
@@ -454,7 +445,7 @@
                     <div class="item">
                         <div class="testimonial">
                             <img
-                                src="images/person_2-min.jpg"
+                                src="<?= base_url('assets') ?>/images/person_2-min.jpg"
                                 alt="Image"
                                 class="img-fluid rounded-circle w-25 mb-4" />
                             <div class="rate">
@@ -480,7 +471,7 @@
                     <div class="item">
                         <div class="testimonial">
                             <img
-                                src="images/person_3-min.jpg"
+                                src="<?= base_url('assets') ?>/images/person_3-min.jpg"
                                 alt="Image"
                                 class="img-fluid rounded-circle w-25 mb-4" />
                             <div class="rate">
@@ -506,7 +497,7 @@
                     <div class="item">
                         <div class="testimonial">
                             <img
-                                src="images/person_4-min.jpg"
+                                src="<?= base_url('assets') ?>/images/person_4-min.jpg"
                                 alt="Image"
                                 class="img-fluid rounded-circle w-25 mb-4" />
                             <div class="rate">
@@ -549,7 +540,7 @@
             <div class="row justify-content-between mb-5">
                 <div class="col-lg-7 mb-5 mb-lg-0 order-lg-2">
                     <div class="img-about dots">
-                        <img src="images/hero_bg_3.jpg" alt="Image" class="img-fluid" />
+                        <img src="<?= base_url('assets') ?>/images/hero_bg_3.jpg" alt="Image" class="img-fluid" />
                     </div>
                 </div>
                 <div class="col-lg-4">
@@ -668,7 +659,7 @@
                 <div class="col-sm-6 col-md-6 col-lg-4 mb-5 mb-lg-0">
                     <div class="h-100 person">
                         <img
-                            src="images/person_1-min.jpg"
+                            src="<?= base_url('assets') ?>/images/person_1-min.jpg"
                             alt="Image"
                             class="img-fluid" />
 
@@ -701,7 +692,7 @@
                 <div class="col-sm-6 col-md-6 col-lg-4 mb-5 mb-lg-0">
                     <div class="h-100 person">
                         <img
-                            src="images/person_2-min.jpg"
+                            src="<?= base_url('assets') ?>/images/person_2-min.jpg"
                             alt="Image"
                             class="img-fluid" />
 
@@ -734,7 +725,7 @@
                 <div class="col-sm-6 col-md-6 col-lg-4 mb-5 mb-lg-0">
                     <div class="h-100 person">
                         <img
-                            src="images/person_3-min.jpg"
+                            src="<?= base_url('assets') ?>/images/person_3-min.jpg"
                             alt="Image"
                             class="img-fluid" />
 
@@ -768,5 +759,5 @@
         </div>
     </div>
 
-<!-- memanggil bagian footer -->
-<?= $this->include('layout/footer')?>
+    <!-- memanggil bagian footer -->
+    <?= $this->include('layout/footer') ?>
