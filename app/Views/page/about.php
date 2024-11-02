@@ -1,60 +1,51 @@
-<?= $this->include('layout/header')?>
-<?= $this->include('layout/navbar')?>
+<?= $this->include('layout/header') ?>
+<?= $this->include('layout/navbar') ?>
 
 
-    <div
-        class="hero page-inner overlay"
-        style="background-image: url('images/hero_bg_3.jpg')">
-        <div class="container">
-            <div class="row justify-content-center align-items-center">
-                <div class="col-lg-9 text-center mt-5">
-                    <h1 class="heading" data-aos="fade-up">About</h1>
+<div
+    class="hero page-inner overlay"
+    style="background-image: url('images/hero_bg_3.jpg')">
+    <div class="container">
+        <div class="row justify-content-center align-items-center">
+            <div class="col-lg-9 text-center mt-5">
+                <h1 class="heading" data-aos="fade-up">About</h1>
 
-                    <nav
-                        aria-label="breadcrumb"
-                        data-aos="fade-up"
-                        data-aos-delay="200">
-                        <ol class="breadcrumb text-center justify-content-center">
-                            <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-                            <li
-                                class="breadcrumb-item active text-white-50"
-                                aria-current="page">
-                                About
-                            </li>
-                        </ol>
-                    </nav>
-                </div>
+                <nav
+                    aria-label="breadcrumb"
+                    data-aos="fade-up"
+                    data-aos-delay="200">
+                    <ol class="breadcrumb text-center justify-content-center">
+                        <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                        <li
+                            class="breadcrumb-item active text-white-50"
+                            aria-current="page">
+                            About
+                        </li>
+                    </ol>
+                </nav>
             </div>
         </div>
     </div>
+</div>
 
-    <div class="section">
-        <div class="container">
-            <div class="row text-left mb-5">
-                <div class="col-12">
-                    <h2 class="font-weight-bold heading text-primary mb-4">About Us</h2>
-                </div>
-                <div class="col-lg-6">
-                    <p class="text-black-50">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam
-                        enim pariatur similique debitis vel nisi qui reprehenderit totam?
-                        Quod maiores.
-                    </p>
-                    <p class="text-black-50">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni
-                        saepe, explicabo nihil. Est, autem error cumque ipsum repellendus
-                        veniam sed blanditiis unde ullam maxime veritatis perferendis
-                        cupiditate, at non esse!
-                    </p>
-                    <p class="text-black-50">
-                        Enim, nisi labore exercitationem facere cupiditate nobis quod
-                        autem veritatis quis minima expedita. Cumque odio illo iusto
-                        reiciendis, labore impedit omnis, nihil aut atque, facilis
-                        necessitatibus asperiores porro qui nam.
-                    </p>
-                </div>
+<div class="section">
+    <div class="container">
+        <div class="row text-left mb-5">
+            <div class="col-12">
+                <h2 class="font-weight-bold heading text-primary mb-4">About Us</h2>
+            </div>
+            <div class="col-lg-6">
+                <p class="text-black-50 text-start">
+                    Bijak Panorama adalah sebuah penginapan hotel yang nyaman dan strategis, terletak di Apartemen Margonda Residence 2. Kami menawarkan berbagai fasilitas modern untuk memastikan pengalaman menginap yang menyenangkan bagi setiap tamu.
+
+                    Di setiap kamar, Anda dapat menikmati akses WiFi gratis yang cepat, serta TV Android lengkap dengan berbagai aplikasi hiburan, termasuk Netflix, sehingga Anda dapat menikmati film dan acara favorit kapan saja. Setiap unit dilengkapi dengan kamar mandi pribadi, lemari pakaian yang luas, dan kitchen set untuk memudahkan Anda dalam menyiapkan makanan selama menginap.
+
+                    Bijak Panorama adalah pilihan tepat untuk Anda yang mencari akomodasi berkualitas dengan kenyamanan seperti di rumah. Baik untuk perjalanan bisnis maupun liburan, kami siap menyambut Anda dengan pelayanan terbaik.
+                </p>
+
             </div>
         </div>
     </div>
+</div>
 
-   <?= $this->include('layout/footer')?>
+<?= $this->include('layout/footer') ?>

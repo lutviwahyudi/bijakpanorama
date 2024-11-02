@@ -8,6 +8,8 @@ use CodeIgniter\Router\RouteCollection;
 $routes->get('/', 'Home::index');
 $routes->get('/contact', 'Contact::index');
 $routes->get('/about', 'Home::about');
+$routes->get('/kamar', 'Kamar::index');
+$routes->get('/kamar/pesan', 'Kamar::pesan');
 $routes->setAutoRoute(true);
 
 

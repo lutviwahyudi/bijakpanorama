@@ -10,12 +10,13 @@
                     <li class="has-children">
                         <a href="">Akomodasi</a>
                         <ul class="dropdown">
-                            <li><a href="<?= base_url('sewakamar')?>"> Sewa Kamar</a></li>
-                            <li><a href="<?= base_url('sewamobil')?>">Sewa Mobil</a></li>
+                            <li><a href="<?= base_url('kamar')?>"> Sewa Kamar</a></li>
+                            <li><a href="<?= base_url('mobil')?>">Sewa Mobil</a></li>
                         </ul>
                     </li>
                     <li><a href="<?= base_url('home/about')?>">About</a></li>
                     <li><a href="<?= base_url('contact') ?>">Contact Us</a></li>
+                 
                 </ul>
 
                 <a
