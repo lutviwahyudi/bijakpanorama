@@ -61,6 +61,10 @@
                 <td><?= $durasi; ?></td>
             </tr>
             <tr>
+                <th>Harga Sewa</th>
+                <td><?= $harga; ?></td>
+            </tr>
+            <tr>
                 <th>Tanggal Check-in</th>
                 <td><?= date('d-m-Y', strtotime($tanggal_checkin)); ?></td>
             </tr>

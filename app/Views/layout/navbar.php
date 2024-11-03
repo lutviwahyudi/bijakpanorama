@@ -16,7 +16,7 @@
                     </li>
                     <li><a href="<?= base_url('home/about')?>">About</a></li>
                     <li><a href="<?= base_url('contact') ?>">Contact Us</a></li>
-                 
+                    <li><a href="<?= base_url('auth')?>">Login</a></li>
                 </ul>
 
                 <a

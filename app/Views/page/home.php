@@ -52,7 +52,7 @@
                                     <div>
                                         <span class="d-block mb-2 text-black-50">24 Hours Stay for Maximum Comfort (Chek-out 12:00 Am)</span>
                                         <span class="city d-block mb-3">Fullday</span>
-                                        
+
                                     </div>
                                 </div>
                             </div>
@@ -65,7 +65,7 @@
                                     <div>
                                         <span class="d-block mb-2 text-black-50">24 Hours Stay for Maximum Comfort</span>
                                         <span class="city d-block mb-3">6 Jam</span>
-                                        
+
                                     </div>
                                 </div>
                             </div>
@@ -78,7 +78,7 @@
                                     <div>
                                         <span class="d-block mb-2 text-black-50">24 Hours Stay for Maximum Comfort</span>
                                         <span class="city d-block mb-3">3 Jam</span>
-                                        
+
                                     </div>
                                 </div>
                             </div>
@@ -91,7 +91,7 @@
                                     <div>
                                         <span class="d-block mb-2 text-black-50">24 Hours Stay for Maximum Comfort (Chek-out 12:00 Am)</span>
                                         <span class="city d-block mb-3">Fullday</span>
-                                        
+
                                     </div>
                                 </div>
                             </div>
@@ -104,7 +104,7 @@
                                     <div>
                                         <span class="d-block mb-2 text-black-50"></span>
                                         <span class="city d-block mb-3">1-2 Minggu</span>
-                                        
+
                                     </div>
                                 </div>
                             </div>
@@ -206,109 +206,30 @@
             </div>
             <div class="testimonial-slider-wrap">
                 <div class="testimonial-slider">
-                    <div class="item">
-                        <div class="testimonial">
-                            <img
-                                src="<?= base_url('assets') ?>/images/person_1-min.jpg"
-                                alt="Image"
-                                class="img-fluid rounded-circle w-25 mb-4" />
-                            <div class="rate">
-                                <span class="icon-star text-warning"></span>
-                                <span class="icon-star text-warning"></span>
-                                <span class="icon-star text-warning"></span>
-                                <span class="icon-star text-warning"></span>
-                                <span class="icon-star text-warning"></span>
+                    <?php foreach ($message as $msg) : ?>
+                        <div class="item">
+                            <div class="testimonial">
+                                <img
+                                    src="<?= base_url('assets') ?>/images/person_1-min.jpg"
+                                    alt="Image"
+                                    class="img-fluid rounded-circle w-25 mb-4" />
+                                <div class="rate">
+                                    <span class="icon-star text-warning"></span>
+                                    <span class="icon-star text-warning"></span>
+                                    <span class="icon-star text-warning"></span>
+                                    <span class="icon-star text-warning"></span>
+                                    <span class="icon-star text-warning"></span>
+                                </div>
+                                <h3 class="h5 text-primary mb-4"><?= $msg['nama'] ?></h3>
+                                <blockquote>
+                                    <p>
+                                        &ldquo;<?= $msg['deskripsi'] ?>&rdquo;
+                                    </p>
+                                </blockquote>
+                                <p class="text-black-50"><?= $msg['email'] ?></p>
                             </div>
-                            <h3 class="h5 text-primary mb-4">James Smith</h3>
-                            <blockquote>
-                                <p>
-                                    &ldquo;Far far away, behind the word mountains, far from the
-                                    countries Vokalia and Consonantia, there live the blind
-                                    texts. Separated they live in Bookmarksgrove right at the
-                                    coast of the Semantics, a large language ocean.&rdquo;
-                                </p>
-                            </blockquote>
-                            <p class="text-black-50">Designer, Co-founder</p>
                         </div>
-                    </div>
-
-                    <div class="item">
-                        <div class="testimonial">
-                            <img
-                                src="<?= base_url('assets') ?>/images/person_2-min.jpg"
-                                alt="Image"
-                                class="img-fluid rounded-circle w-25 mb-4" />
-                            <div class="rate">
-                                <span class="icon-star text-warning"></span>
-                                <span class="icon-star text-warning"></span>
-                                <span class="icon-star text-warning"></span>
-                                <span class="icon-star text-warning"></span>
-                                <span class="icon-star text-warning"></span>
-                            </div>
-                            <h3 class="h5 text-primary mb-4">Mike Houston</h3>
-                            <blockquote>
-                                <p>
-                                    &ldquo;Far far away, behind the word mountains, far from the
-                                    countries Vokalia and Consonantia, there live the blind
-                                    texts. Separated they live in Bookmarksgrove right at the
-                                    coast of the Semantics, a large language ocean.&rdquo;
-                                </p>
-                            </blockquote>
-                            <p class="text-black-50">Designer, Co-founder</p>
-                        </div>
-                    </div>
-
-                    <div class="item">
-                        <div class="testimonial">
-                            <img
-                                src="<?= base_url('assets') ?>/images/person_3-min.jpg"
-                                alt="Image"
-                                class="img-fluid rounded-circle w-25 mb-4" />
-                            <div class="rate">
-                                <span class="icon-star text-warning"></span>
-                                <span class="icon-star text-warning"></span>
-                                <span class="icon-star text-warning"></span>
-                                <span class="icon-star text-warning"></span>
-                                <span class="icon-star text-warning"></span>
-                            </div>
-                            <h3 class="h5 text-primary mb-4">Cameron Webster</h3>
-                            <blockquote>
-                                <p>
-                                    &ldquo;Far far away, behind the word mountains, far from the
-                                    countries Vokalia and Consonantia, there live the blind
-                                    texts. Separated they live in Bookmarksgrove right at the
-                                    coast of the Semantics, a large language ocean.&rdquo;
-                                </p>
-                            </blockquote>
-                            <p class="text-black-50">Designer, Co-founder</p>
-                        </div>
-                    </div>
-
-                    <div class="item">
-                        <div class="testimonial">
-                            <img
-                                src="<?= base_url('assets') ?>/images/person_4-min.jpg"
-                                alt="Image"
-                                class="img-fluid rounded-circle w-25 mb-4" />
-                            <div class="rate">
-                                <span class="icon-star text-warning"></span>
-                                <span class="icon-star text-warning"></span>
-                                <span class="icon-star text-warning"></span>
-                                <span class="icon-star text-warning"></span>
-                                <span class="icon-star text-warning"></span>
-                            </div>
-                            <h3 class="h5 text-primary mb-4">Dave Smith</h3>
-                            <blockquote>
-                                <p>
-                                    &ldquo;Far far away, behind the word mountains, far from the
-                                    countries Vokalia and Consonantia, there live the blind
-                                    texts. Separated they live in Bookmarksgrove right at the
-                                    coast of the Semantics, a large language ocean.&rdquo;
-                                </p>
-                            </blockquote>
-                            <p class="text-black-50">Designer, Co-founder</p>
-                        </div>
-                    </div>
+                    <?php endforeach; ?>
                 </div>
             </div>
         </div>

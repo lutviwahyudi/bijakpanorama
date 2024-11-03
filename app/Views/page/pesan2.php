@@ -43,6 +43,11 @@
                 </div>
 
                 <div class="form-group">
+                    <label for="no_hp">Harga Sewa</label>
+                    <input type="tel" class="form-control" id="no_hp" name="no_hp" value="<?= $harga ?>" readonly>
+                </div>
+
+                <div class="form-group">
                     <label for="tanggal_checkin">Tanggal Check-in</label>
                     <input type="date" class="form-control" id="tanggal_checkin" name="tanggal_checkin" required>
                 </div>

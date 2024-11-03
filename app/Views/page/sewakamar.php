@@ -1,17 +1,17 @@
 <?= $this->include('layout/header') ?>
 <?= $this->include('layout/navbar') ?>
 
-<div class="container" style="margin-top: 10%;">
+<div class="container" style="margin-top: 15%;">
     <h2 class="font-weight-bold text-primary heading text-center">
         Pilih Kamar
     </h2>
 </div>
-
+<br>
 <table class="table table-striped w-80 mx-auto" style="width: 80%;">
     <thead>
         <tr>
             <th scope="col">No</th>
-            <th scope="col">Jenis Kamar</th>
+            <th scope="col">Jenis Sewa</th>
             <th scope="col">Harga</th>
             <th scope="col">Aksi</th>
         </tr>

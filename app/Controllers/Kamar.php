@@ -25,7 +25,7 @@ class Kamar extends BaseController
 
     public function pesan($id_kamar)
     {
-
+        
         $data = [
             'title' => 'Form Pemesanan | Page',
             'kamar' => $this->KamarModel->getKamarById($id_kamar)
@@ -37,9 +37,26 @@ class Kamar extends BaseController
 
     
         if ($id_kamar == 3 || $id_kamar == 4) {
+
+            if ($id_kamar == 3) {
+                $harga = 35000;
+            } else {
+                $harga = 25000;
+            }
+            // Masukkan harga ke dalam data yang akan dikirim ke view
+            $data['harga'] = $harga;
             return view('page/pesan1', $data);    
         }
         else {
+
+            if ($id_kamar == 1) {
+                $harga = 250000;
+            } else {
+                $harga = 200000;
+            }
+            // Masukkan harga ke dalam data yang akan dikirim ke view
+            $data['harga'] = $harga;
+
             return view('page/pesan2', $data);
         }
     }
@@ -54,6 +71,7 @@ class Kamar extends BaseController
             'waktu_mulai' => $this->request->getPost('waktu_mulai'),
             'waktu_berakhir' => $this->request->getPost('waktu_berakhir'),
             'durasi' => $this->request->getPost('durasi'),
+            'harga' => $this->request->getPost('harga'),
             'tanggal_checkin' => $this->request->getPost('tanggal_checkin'),
         ];
 
