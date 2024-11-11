@@ -67,22 +67,27 @@
         var waktuMulai = document.getElementById('waktu_mulai').value;
         var waktuBerakhir = document.getElementById('waktu_berakhir').value;
         const harga = <?= $harga ?>;
+
         if (waktuMulai && waktuBerakhir) {
-            // Mengonversi waktu menjadi jam dan menit
             var mulai = new Date("1970-01-01T" + waktuMulai + ":00");
             var berakhir = new Date("1970-01-01T" + waktuBerakhir + ":00");
 
             // Menghitung durasi dalam jam
-            var durasi = (berakhir - mulai) / (1000 * 60 * 60); // dalam jam
+            var durasi = (berakhir - mulai) / (1000 * 60 * 60);
 
             if (durasi < 0) {
-                durasi += 24; // menyesuaikan jika berakhir keesokan harinya
+                durasi += 24;
             }
 
             const totalHarga = durasi * harga;
 
+            // mengubah format harga
+            function formatRupiah(totalHarga) {
+                return totalHarga.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".");
+            }
+
             document.getElementById('durasi').value = durasi + ' Jam';
-            document.getElementById("harga").value = totalHarga;
+            document.getElementById("harga").value = formatRupiah('Rp ' + totalHarga + ',00');
         } else {
             document.getElementById('durasi').value = ''; // Kosongkan jika salah satu tidak dipilih
         }

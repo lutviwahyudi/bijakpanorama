@@ -21,7 +21,43 @@
                             <span class="d-block mb-2 text-black-50"></span>
                             <span class="city d-block mb-3">1-2 Minggu</span>
                             <a
-                                href="property-single.html"
+                                href=""
+                                class="btn btn-primary py-2 px-3">Pesan</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- .item -->
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4">
+                <div class="property-item mb-30">
+                    <a href="property-single.html" class="img">
+                        <img src="<?= base_url('assets') ?>/images/mobil2.png" alt="Image" class="img-fluid" />
+                    </a>
+                    <div class="property-content">
+                        <div class="price mb-2"><span>Rp.2.500.000,00</span></div>
+                        <div>
+                            <span class="d-block mb-2 text-black-50"></span>
+                            <span class="city d-block mb-3">1-2 Minggu</span>
+                            <a
+                                href=""
+                                class="btn btn-primary py-2 px-3">Pesan</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- .item -->
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4">
+                <div class="property-item mb-30">
+                    <a href="property-single.html" class="img">
+                        <img src="<?= base_url('assets') ?>/images/mobil1.png" alt="Image" class="img-fluid" />
+                    </a>
+                    <div class="property-content">
+                        <div class="price mb-2"><span>Rp.2.500.000,00</span></div>
+                        <div>
+                            <span class="d-block mb-2 text-black-50"></span>
+                            <span class="city d-block mb-3">1-2 Minggu</span>
+                            <a
+                                href=""
                                 class="btn btn-primary py-2 px-3">Pesan</a>
                         </div>
                     </div>

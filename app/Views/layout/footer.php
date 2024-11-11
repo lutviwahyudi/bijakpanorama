@@ -15,14 +15,15 @@
                 <!-- /.widget -->
             </div>
             <!-- /.col-lg-4 -->
+            <div class="col-lg-4">
 
+            </div>
             <!-- /.col-lg-4 -->
             <div class="col-lg-4">
                 <div class="widget">
-                
                     <ul class="list-unstyled social">
                         <li>
-                            <a href="#"><span class="icon-instagram"></span></a>
+                            <a href="https://www.instagram.com/bijakpanorama?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="><span class="icon-instagram"></span></a>
                         </li>
                         <li>
                             <a href="#"><span class="icon-twitter"></span></a>

@@ -65,14 +65,14 @@ class Kamar extends BaseController
     {
 
         $data_pemesanan = [
-            'id_kamar' => $this->request->getPost('id_kamar'),
-            'nama' => $this->request->getPost('nama'),
-            'no_hp' => $this->request->getPost('no_hp'),
-            'waktu_mulai' => $this->request->getPost('waktu_mulai'),
-            'waktu_berakhir' => $this->request->getPost('waktu_berakhir'),
+            'id_kamar' => htmlspecialchars($this->request->getPost('id_kamar'), ENT_QUOTES, 'UTF-8'),
+            'nama' => htmlspecialchars($this->request->getPost('nama'), ENT_QUOTES, 'UTF-8'),
+            'no_hp' => htmlspecialchars($this->request->getPost('no_hp'), ENT_QUOTES, 'UTF-8'),
+            'waktu_mulai' => htmlspecialchars($this->request->getPost('waktu_mulai'), ENT_QUOTES, 'UTF-8'),
+            'waktu_berakhir' => htmlspecialchars($this->request->getPost('waktu_berakhir'), ENT_QUOTES, 'UTF-8'),
             'durasi' => $this->request->getPost('durasi'),
             'harga' => $this->request->getPost('harga'),
-            'tanggal_checkin' => $this->request->getPost('tanggal_checkin'),
+            'tanggal_checkin' => htmlspecialchars($this->request->getPost('tanggal_checkin'), ENT_QUOTES, 'UTF-8'),
         ];
 
         $html = view('page/pemesanan', $data_pemesanan);
@@ -87,5 +87,6 @@ class Kamar extends BaseController
 
         $dompdf->stream("rincian_pemesanan.pdf", ["Attachment" => false]);
     }
+
     
 }

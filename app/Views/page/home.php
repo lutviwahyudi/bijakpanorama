@@ -7,13 +7,13 @@
         <div class="hero-slide">
             <div
                 class="img overlay"
-                style="background-image: url('<?= base_url('assets') ?>/images/hero_bg_3.jpg')"></div>
+                style="background-image: url('<?= base_url('assets') ?>/images/kamar/kr5.jpg')"></div>
             <div
                 class="img overlay"
-                style="background-image: url('<?= base_url('assets') ?>/images/hero_bg_2.jpg')"></div>
+                style="background-image: url('<?= base_url('assets') ?>/images/kamar/kr4.png')"></div>
             <div
                 class="img overlay"
-                style="background-image: url('<?= base_url('assets') ?>/images/hero_bg_1.jpg')"></div>
+                style="background-image: url('<?= base_url('assets') ?>/images/kamar/kr1.jpg')"></div>
         </div>
 
         <div class="container">
@@ -34,7 +34,7 @@
             <div class="row mb-5 align-items-center">
                 <div class="col">
                     <h2 class="font-weight-bold text-primary text-center heading">
-                        Popular Properties
+                        Kamar & Fasilitas
                     </h2>
                 </div>
             </div>
@@ -45,12 +45,12 @@
 
                             <div class="property-item">
                                 <a href="" class="ratio ratio-1x1">
-                                    <img src="<?= base_url('assets') ?>/images/kamar4.png" alt="Image" class="img-fluid" />
+                                    <img src="<?= base_url('assets') ?>/images/kamar/kamar17.jpg" alt="Image" class="img-fluid" />
                                 </a>
                                 <div class="property-content">
                                     <div class="price mb-2"><span>Rp.250.000,00</span></div>
                                     <div>
-                                        <span class="d-block mb-2 text-black-50">24 Hours Stay for Maximum Comfort (Chek-out 12:00 Am)</span>
+                                        <span class="d-block mb-2 text-black-50">Free Wifi, Tv Android, AC, dan mini Kitchen set </span>
                                         <span class="city d-block mb-3">Fullday</span>
 
                                     </div>
@@ -58,12 +58,12 @@
                             </div>
                             <div class="property-item">
                                 <a href="" class="ratio ratio-1x1">
-                                    <img src="<?= base_url('assets') ?>/images/kamar2.png" alt="Image" class="img-fluid" />
+                                    <img src="<?= base_url('assets') ?>/images/kamar/kamar1.jpg" alt="Image" class="img-fluid" />
                                 </a>
                                 <div class="property-content">
                                     <div class="price mb-2"><span>Rp.150.000,00</span></div>
                                     <div>
-                                        <span class="d-block mb-2 text-black-50">24 Hours Stay for Maximum Comfort</span>
+                                        <span class="d-block mb-2 text-black-50">Free Wifi, Tv Android, AC, dan mini Kitchen set </span>
                                         <span class="city d-block mb-3">6 Jam</span>
 
                                     </div>
@@ -71,39 +71,13 @@
                             </div>
                             <div class="property-item">
                                 <a href="" class="ratio ratio-1x1">
-                                    <img src="<?= base_url('assets') ?>/images/kamar1.png" alt="Image" class="img-fluid" />
+                                    <img src="<?= base_url('assets') ?>/images/kamar/kamar6.jpg" alt="Image" class="img-fluid" />
                                 </a>
                                 <div class="property-content">
                                     <div class="price mb-2"><span>Rp.100.000,00</span></div>
                                     <div>
-                                        <span class="d-block mb-2 text-black-50">24 Hours Stay for Maximum Comfort</span>
-                                        <span class="city d-block mb-3">3 Jam</span>
-
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="property-item">
-                                <a href="" class="ratio ratio-1x1">
-                                    <img src="<?= base_url('assets') ?>/images/kamar4.png" alt="Image" class="img-fluid" />
-                                </a>
-                                <div class="property-content">
-                                    <div class="price mb-2"><span>Rp.250.000,00</span></div>
-                                    <div>
-                                        <span class="d-block mb-2 text-black-50">24 Hours Stay for Maximum Comfort (Chek-out 12:00 Am)</span>
-                                        <span class="city d-block mb-3">Fullday</span>
-
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="property-item">
-                                <a href="" class="img">
-                                    <img src="<?= base_url('assets') ?>/images/mobil3.png" alt="Image" class="img-fluid" />
-                                </a>
-                                <div class="property-content">
-                                    <div class="price mb-2"><span>Rp.2.500.000,00</span></div>
-                                    <div>
-                                        <span class="d-block mb-2 text-black-50"></span>
-                                        <span class="city d-block mb-3">1-2 Minggu</span>
+                                        <span class="d-block mb-2 text-black-50">Free Wifi, Tv Android, AC, dan mini Kitchen set </span>
+                                        <span class="city d-block mb-3">4 Jam</span>
 
                                     </div>
                                 </div>
@@ -189,7 +163,7 @@
             <div class="row mb-5 align-items-center">
                 <div class="col-md-6">
                     <h2 class="font-weight-bold heading text-primary mb-4 mb-md-0">
-                        Customer Says
+                        Apa Kata Mereka ?
                     </h2>
                 </div>
                 <div class="col-md-6 text-md-end">
@@ -210,7 +184,7 @@
                         <div class="item">
                             <div class="testimonial">
                                 <img
-                                    src="<?= base_url('assets') ?>/images/person_1-min.jpg"
+                                    src="<?= base_url('assets') ?>/images/person.jpg"
                                     alt="Image"
                                     class="img-fluid rounded-circle w-25 mb-4" />
                                 <div class="rate">
@@ -240,18 +214,18 @@
             <div class="row justify-content-center text-center mb-5">
                 <div class="col-lg-5">
                     <h2 class="font-weight-bold heading text-primary mb-4">
-                        Let's find home that's perfect for you
+                        INGAT APART, INGAT BIJAK
                     </h2>
                     <p class="text-black-50">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam
-                        enim pariatur similique debitis vel nisi qui reprehenderit.
+                        Temukan penginapan yang sempurna untuk Anda! Nikmati kenyamanan, fasilitas lengkap, dan pengalaman menginap tak terlupakan di tempat kami.
+                        Rasakan suasana yang tenang, aman, dan nyaman bersama kami.
                     </p>
                 </div>
             </div>
             <div class="row justify-content-between mb-5">
                 <div class="col-lg-7 mb-5 mb-lg-0 order-lg-2">
                     <div class="img-about dots">
-                        <img src="<?= base_url('assets') ?>/images/kamar5.png" alt="Image" class="img-fluid" style="width: 640px; height: 480px">
+                        <img src="<?= base_url('assets') ?>/images/kamar/kr3.jpg" alt="Image" class="img-fluid" style="width: 640px; height: 480px">
                     </div>
                 </div>
                 <div class="col-lg-4">
@@ -260,10 +234,9 @@
                             <span class="icon-home2"></span>
                         </span>
                         <div class="feature-text">
-                            <h3 class="heading">2M Properties</h3>
+                            <h3 class="heading">Fasilitas</h3>
                             <p class="text-black-50">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                Nostrum iste.
+                                Pilihan properti terbaik dengan lokasi strategis dan fasilitas lengkap untuk kenyamanan Anda.
                             </p>
                         </div>
                     </div>
@@ -273,10 +246,9 @@
                             <span class="icon-person"></span>
                         </span>
                         <div class="feature-text">
-                            <h3 class="heading">Top Rated Agents</h3>
+                            <h3 class="heading">Kenyamanan</h3>
                             <p class="text-black-50">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                Nostrum iste.
+                                Tim agen berpengalaman dan terpercaya siap membantu Anda menemukan penginapan yang sesuai kebutuhan.
                             </p>
                         </div>
                     </div>
@@ -286,10 +258,9 @@
                             <span class="icon-security"></span>
                         </span>
                         <div class="feature-text">
-                            <h3 class="heading">Legit Properties</h3>
+                            <h3 class="heading">Keamanan</h3>
                             <p class="text-black-50">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                Nostrum iste.
+                                Properti resmi dan aman, dijamin nyaman dan sesuai standar tinggi untuk pengalaman menginap terbaik.
                             </p>
                         </div>
                     </div>
