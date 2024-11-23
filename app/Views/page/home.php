@@ -2,7 +2,6 @@
     <?= $this->include('layout/header') ?>
     <!-- memanggil bagian navbar -->
     <?= $this->include('layout/navbar') ?>
-
     <div class="hero">
         <div class="hero-slide">
             <div
@@ -108,7 +107,7 @@
     </div>
 
     <section class="features-1">
-        <div class="container">
+        <!--<div class="container">
             <div class="row">
                 <div class="col-6 col-lg-3" data-aos="fade-up" data-aos-delay="300">
                     <div class="box-feature">
@@ -155,7 +154,7 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div> -->
     </section>
 
     <div class="section sec-testimonials">
@@ -269,7 +268,7 @@
         </div>
     </div>
 
-    <div class="section">
+    <!-- <div class="section">
         <div class="row justify-content-center footer-cta" data-aos="fade-up">
             <div class="col-lg-7 mx-auto text-center">
                 <h2 class="mb-4">Be a part of our growing real state agents</h2>
@@ -280,12 +279,10 @@
                         class="btn btn-primary text-white py-3 px-4">Apply for Real Estate agent</a>
                 </p>
             </div>
-            <!-- /.col-lg-7 -->
         </div>
-        <!-- /.row -->
-    </div>
+    </div> -->
 
-    <div class="section section-5 bg-light">
+    <!-- <div class="section section-5 bg-light">
         <div class="container">
             <div class="row justify-content-center text-center mb-5">
                 <div class="col-lg-6 mb-5">
@@ -401,7 +398,7 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> -->
 
     <!-- memanggil bagian footer -->
     <?= $this->include('layout/footer') ?>

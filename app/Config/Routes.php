@@ -12,6 +12,7 @@ $routes->get('/about', 'Home::about');
 $routes->get('/kamar', 'Kamar::index');
 $routes->get('/kamar/pesan', 'Kamar::pesan');
 $routes->get('/kamar/submit_tamu', 'Kamar::submit_tamu');
+$routes->get('kamar/submit_pemesanan', 'Kamar::submit_pemesanan');
 $routes->setAutoRoute(true);
 
 

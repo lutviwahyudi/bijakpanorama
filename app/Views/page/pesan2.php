@@ -54,6 +54,29 @@
 
                 <button type="submit" class="btn btn-primary" style="margin-top: 15px;">Lanjutkan Pemesanan</button>
             </form>
+            <!-- ini adalah alert pengiriman pesan -->
+            <?php if (session()->getFlashdata('success')) : ?>
+                <div id="alert" class="alert alert-success col-md-6 col-lg-5 mx-auto">
+                    <?= session()->getFlashdata('success'); ?>
+                </div>
+            <?php elseif (session()->getFlashdata('error')) : ?>
+                <div id="alert" class="alert alert-danger col-md-6 col-lg-5 mx-auto">
+                    <?= session()->getFlashdata('error'); ?>
+                </div>
+            <?php endif; ?>
+            <!-- akhir code -->
+
+            <!-- ini script alert -->
+            <script>
+                // Menghilangkan alert setelah 5 detik
+                setTimeout(function() {
+                    var alert = document.getElementById('alert');
+                    if (alert) {
+                        alert.style.display = 'none';
+                    }
+                }, 5000); // 5000 ms = 5 detik
+            </script>
+            <!-- ini script alert -->
         </div>
     </div>
 </div>

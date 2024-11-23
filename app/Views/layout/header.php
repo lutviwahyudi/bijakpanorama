@@ -22,9 +22,10 @@
     <link rel="stylesheet" href="<?= base_url('assets/') ?>css/tiny-slider.css" />
     <link rel="stylesheet" href="<?= base_url('assets/') ?>css/aos.css" />
     <link rel="stylesheet" href="<?= base_url('assets/') ?>css/style.css" />
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
 
     <title>
-      <?= $title ?>
+        <?= $title ?>
     </title>
 </head>
 
