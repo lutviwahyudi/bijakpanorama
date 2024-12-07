@@ -8,7 +8,7 @@
         <div class="card-body">
             <form action="<?= base_url('kamar/submit_pemesanan'); ?>" method="POST" enctype="multipart/form-data">
                 <!-- Hidden field untuk id_kamar -->
-                <input type="hidden" name="id_kamar" value="<?= $kamar['id_kamar']; ?>">
+                <input type="hidden" name="id_tamu" value="<?= $kamar['id_tamu']; ?>">
 
                 <div class="form-group">
                     <label for="nama">Nama Lengkap</label>

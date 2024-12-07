@@ -72,6 +72,19 @@
     </div>
 </div>
 
+
+<!-- ini script alert -->
+<script>
+    // Menghilangkan alert setelah 5 detik
+    setTimeout(function() {
+        var alert = document.getElementById('alert');
+        if (alert) {
+            alert.style.display = 'none';
+        }
+    }, 5000); // 5000 ms = 5 detik
+</script>
+<!-- ini script alert -->
+
 <script src="<?= base_url('assets/') ?>js/bootstrap.bundle.min.js"></script>
 <script src="<?= base_url('assets/') ?>js/tiny-slider.js"></script>
 <script src="<?= base_url('assets/') ?>js/aos.js"></script>

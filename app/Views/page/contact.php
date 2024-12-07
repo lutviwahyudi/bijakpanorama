@@ -2,29 +2,11 @@
    <?= $this->include('layout/header') ?>
    <!-- memanggil bagian navbar -->
    <?= $this->include('layout/navbar') ?>
-
-
-   <div
-       class="hero page-inner overlay"
-       style="background-image: url('<?= base_url('assets')?>/images/kamar/kamar1.jpg')">
+   <div class="hero page-inner overlay" style="background-image: url('<?= base_url('assets')?>/images/kamar/kamar1.jpg')">
        <div class="container">
            <div class="row justify-content-center align-items-center">
                <div class="col-lg-9 text-center mt-5">
                    <h1 class="heading" data-aos="fade-up">Contact Us</h1>
-
-                   <nav
-                       aria-label="breadcrumb"
-                       data-aos="fade-up"
-                       data-aos-delay="200">
-                       <ol class="breadcrumb text-center justify-content-center">
-                           <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-                           <li
-                               class="breadcrumb-item active text-white-50"
-                               aria-current="page">
-                               Contact
-                           </li>
-                       </ol>
-                   </nav>
                </div>
            </div>
        </div>
@@ -41,18 +23,6 @@
        </div>
    <?php endif; ?>
    <!-- akhir code -->
-
-   <!-- ini script alert -->
-   <script>
-       // Menghilangkan alert setelah 5 detik
-       setTimeout(function() {
-           var alert = document.getElementById('alert');
-           if (alert) {
-               alert.style.display = 'none';
-           }
-       }, 5000); // 5000 ms = 5 detik
-   </script>
-   <!-- ini script alert -->
    <div class="section">
        <div class="container">
            <div class="row">

@@ -66,7 +66,7 @@ class Kamar extends BaseController
     {
 
         $data_pemesanan = [
-            'id_kamar' => htmlspecialchars($this->request->getPost('id_kamar'), ENT_QUOTES, 'UTF-8'),
+            'id_tamu' => htmlspecialchars($this->request->getPost('id_tamu'), ENT_QUOTES, 'UTF-8'),
             'nama' => htmlspecialchars($this->request->getPost('nama'), ENT_QUOTES, 'UTF-8'),
             'no_hp' => htmlspecialchars($this->request->getPost('no_hp'), ENT_QUOTES, 'UTF-8'),
             'waktu_mulai' => htmlspecialchars($this->request->getPost('waktu_mulai'), ENT_QUOTES, 'UTF-8'),
@@ -96,10 +96,10 @@ class Kamar extends BaseController
         $twilio = new Client($sid, $token);
 
         $message = $twilio->messages->create(
-                "whatsapp:+6281386225719", // To
+                "whatsapp:+6285157128284", // To
                 [
                     "from" => "whatsapp:+14155238886",
-                    "mediaUrl" => ["https://7b94-116-206-241-84.ngrok-free.app/bijakpanorama/public/uploads/Rincian_pemesanan.pdf"]
+                    "mediaUrl" => ["https://5195-182-2-164-35.ngrok-free.app/bijakpanorama/public/uploads/Rincian_pemesanan.pdf"]
                 ]
             );
 
