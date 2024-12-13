@@ -2,6 +2,7 @@
 
 namespace App\Controllers;
 use App\Models\MsgModel;
+use App\Models\TamuModel;
 
 class Home extends BaseController
 {
@@ -10,10 +11,12 @@ class Home extends BaseController
     //     return view('welcome_message');
     // }
     protected $MsgModel;
+    protected $TamuModel;
 
     public function __construct()
     {
         $this->MsgModel = new MsgModel();
+        $this->TamuModel = new TamuModel();
     }
 
     public function index() 
@@ -36,7 +39,8 @@ class Home extends BaseController
     public function timer()
     {
         $data = [
-            'title' => 'timer | Page'
+            'title' => 'timer | Page',
+            'tamu' => $this->TamuModel->findAll()
         ];
 
         return view('page/timer', $data);    

@@ -2,6 +2,8 @@
 
 namespace App\Controllers;
 use App\Models\KamarModel;
+use App\Models\AuthModel;
+use App\Models\TamuModel;
 use Dompdf\Dompdf;
 use Dompdf\Options;
 use Twilio\Rest\Client;
@@ -10,9 +12,13 @@ class Kamar extends BaseController
 {
 
     protected $KamarModel;
+    protected $AuthModel;
+    protected $TamuModel;
     public function __construct()
     {
         $this->KamarModel = new KamarModel();
+        $this->AuthModel = new AuthModel();
+        $this->TamuModel = new TamuModel();
     }
 
     public function index()
@@ -66,7 +72,7 @@ class Kamar extends BaseController
     {
 
         $data_pemesanan = [
-            'id_tamu' => htmlspecialchars($this->request->getPost('id_tamu'), ENT_QUOTES, 'UTF-8'),
+            'id_user' => $this->AuthModel->where('id_user')->first(),
             'nama' => htmlspecialchars($this->request->getPost('nama'), ENT_QUOTES, 'UTF-8'),
             'no_hp' => htmlspecialchars($this->request->getPost('no_hp'), ENT_QUOTES, 'UTF-8'),
             'waktu_mulai' => htmlspecialchars($this->request->getPost('waktu_mulai'), ENT_QUOTES, 'UTF-8'),
@@ -75,6 +81,18 @@ class Kamar extends BaseController
             'harga' => $this->request->getPost('harga'),
             'tanggal_checkin' => htmlspecialchars($this->request->getPost('tanggal_checkin'), ENT_QUOTES, 'UTF-8'),
         ];
+
+        // Memasukkan data tamu ke tb_tamu melalui KamarModel
+        $data_tamu = [
+            'nama' => $data_pemesanan['nama'],
+            'no_hp' => $data_pemesanan['no_hp'],
+            'waktu_mulai' => $data_pemesanan['waktu_mulai'],
+            'waktu_berakhir' => $data_pemesanan['waktu_berakhir'],
+            'durasi' => $data_pemesanan['durasi']
+        ];
+
+        $this->TamuModel->getTamu($data_tamu);
+        
         
         $html = view('page/pemesanan', $data_pemesanan);
 
@@ -96,18 +114,27 @@ class Kamar extends BaseController
         $twilio = new Client($sid, $token);
 
         $message = $twilio->messages->create(
-                "whatsapp:+6285157128284", // To
+            "whatsapp:+6281346666467", // To
                 [
                     "from" => "whatsapp:+14155238886",
-                    "mediaUrl" => ["https://5195-182-2-164-35.ngrok-free.app/bijakpanorama/public/uploads/Rincian_pemesanan.pdf"]
+                    "mediaUrl" => ["https://2b4d-116-254-125-253.ngrok-free.app/bijakpanorama/public/uploads/Rincian_pemesanan.pdf"]
                 ]
             );
 
+        // Ambil username dari sesi
+        $username = session()->get('username');
+
+        // Cari data pengguna berdasarkan username
+        $user = $this->AuthModel->where('username', $username)->first();
 
         if ($message->status == 'queued' || $message->status == 'sent') {
+            
+            $nama = $user['username'];
+            $successMessage = "Terima kasih, $nama. Rincian pemesanan berhasil terkirim.";
 
-            return redirect()->back()->with('success', 'Rincian pemesanan berhasil terkirim.');
-        } else {
+            return redirect()->back()->with('success', $successMessage);
+        }
+        else {
 
             return redirect()->back()->with('error', 'Gagal mengirim rincian pemesanan.');
         }

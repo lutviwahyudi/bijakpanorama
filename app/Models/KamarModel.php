@@ -7,7 +7,7 @@ use CodeIgniter\Model;
 class KamarModel extends Model
 {
     protected $table = 'tb_kamar';
-    protected $primaryKey = 'id';
+    protected $primaryKey = 'id_kamar';
     protected $allowedFields = ['j_kamar', 'harga',];
 
     public function getKamarById($id_kamar)

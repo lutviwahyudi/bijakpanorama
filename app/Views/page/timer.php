@@ -10,6 +10,35 @@
             }
         </script>
     </div>
+
+    <div class="table" style="margin-top: 40px;">
+        <table class="table">
+            <thead>
+                <tr>
+                    <th scope="col">No</th>
+                    <th scope="col">Nama Tamu</th>
+                    <th scope="col">No Handphone</th>
+                    <th scope="col">Waktu Chekin</th>
+                    <th scope="col">Waktu Chekout</th>
+                    <th scope="col">Durasi</th>
+                    <th scope="col">Tanggal</th>
+                </tr>
+            </thead>
+            <tbody>
+                <?php foreach ($tamu as $index => $tm) : ?>
+                    <tr>
+                        <th scope="row"><?= $index + 1 ?></th>
+                        <td><?= $tm['nama'] ?></td>
+                        <td><?= $tm['no_hp'] ?></td>
+                        <td><?= $tm['waktu_mulai'] ?></td>
+                        <td><?= $tm['waktu_berakhir'] ?></td>
+                        <td><?= $tm['durasi'] ?></td>
+                        <td><?= $tm['date'] ?></td>
+                    </tr>
+            </tbody>
+        <?php endforeach; ?>
+        </table>
+    </div>
 </div>
 
 <div id="timeInputForm" class="modal" tabindex="-1" role="dialog">

@@ -18,7 +18,7 @@
 
     <link rel="stylesheet" href="<?= base_url('assets/') ?>fonts/icomoon/style.css" />
     <link rel="stylesheet" href="<?= base_url('assets/') ?>fonts/flaticon/font/flaticon.css" />
-
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" href="<?= base_url('assets/') ?>css/tiny-slider.css" />
     <link rel="stylesheet" href="<?= base_url('assets/') ?>css/aos.css" />
     <link rel="stylesheet" href="<?= base_url('assets/') ?>css/style.css" />

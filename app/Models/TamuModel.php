@@ -8,5 +8,10 @@ class TamuModel extends Model
 {
     protected $table = 'tb_tamu';
     protected $primaryKey = 'id_tamu';
-    protected $allowedFields = ['nama', 'nomor', 'date', 'deskripsi'];
+    protected $allowedFields = ['nama', 'no_hp', 'waktu_mulai', 'waktu_berakhir', 'durasi', 'date'];
+
+    public function getTamu($data)
+    {
+        return $this->insert($data);    
+    }
 }

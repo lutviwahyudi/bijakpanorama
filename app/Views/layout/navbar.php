@@ -6,17 +6,17 @@
 
                 <ul
                     class="js-clone-nav d-none d-lg-inline-block text-start site-menu float-end">
-                    <li class="active"><a href="<?= base_url('/')?>">Home</a></li>
+                    <li class="active"><a href="<?= base_url('/') ?>">Home</a></li>
                     <li class="has-children">
                         <a href="">Akomodasi</a>
                         <ul class="dropdown">
-                            <li><a href="<?= base_url('kamar')?>"> Sewa Kamar</a></li>
-                            <li><a href="<?= base_url('mobil')?>">Sewa Mobil</a></li>
+                            <li><a href="<?= base_url('kamar') ?>"> Sewa Kamar</a></li>
+                            <li><a href="<?= base_url('mobil') ?>">Sewa Mobil</a></li>
                         </ul>
                     </li>
-                    <li><a href="<?= base_url('home/about')?>">About</a></li>
+                    <li><a href="<?= base_url('home/about') ?>">About</a></li>
                     <li><a href="<?= base_url('contact') ?>">Contact Us</a></li>
-                    <li><a href="<?= base_url('auth')?>">Login</a></li>
+                    <li><a href="<?= base_url('auth') ?>">Login</a></li>
                 </ul>
 
                 <a
